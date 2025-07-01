@@ -1,0 +1,21 @@
+{
+  "name": "ts-bank-system",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "tsx src/app.ts",
+    "start:watch": "tsx watch src/app.ts",
+    "start:build": "npm run dist && --env-file=.env node/dist/app.js",
+    "build": "tsup src",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
