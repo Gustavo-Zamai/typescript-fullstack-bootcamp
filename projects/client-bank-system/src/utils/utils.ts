@@ -4,4 +4,10 @@ interface ICard {
     details: string
 }
 
-export default ICard;
+interface LabelProps {
+    id: string
+    type: string
+    label: string
+}
+
+export type { ICard, LabelProps };

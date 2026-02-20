@@ -1,4 +1,4 @@
-import ICard from "../utils/utils";
+import { ICard } from "../../utils/utils";
 
 export const Card = ({id, paragraph, details} : ICard) => {
     return (

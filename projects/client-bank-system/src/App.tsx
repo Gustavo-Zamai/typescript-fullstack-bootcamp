@@ -1,32 +1,25 @@
-import { Card } from './components/Card';
-import { Layout } from './components/Layout';
+import { LoginButton } from './components/Button/Button';
+import { Box, Center, ChakraProvider, defaultSystem } from '@chakra-ui/react';
+import { Header } from './components/Header/Header';
+import { Label } from './components/Label/Label';
 
 
 // the sign <> </> means React Fragment, it is used to group a list of children without adding extra nodes to the DOM.
 function App() {
   return (
-      <Layout>
-        <Card 
-          id={1} 
-          paragraph="Card 1 paragraph" 
-          details="Card 1 details" 
-        />
-        <Card 
-          id={2} 
-          paragraph="Card 2 paragraph" 
-          details="Card 2 details" 
-        />
-        <Card 
-          id={3} 
-          paragraph="Card 3 paragraph" 
-          details="Card 3 details" 
-        />
-        <Card 
-          id={4} 
-          paragraph="Card 4 paragraph" 
-          details="Card 4 details" 
-        />
-      </Layout>
+    <ChakraProvider value={defaultSystem}>
+      <Box bg='royalblue' minHeight='100vh'>
+        <Header />
+        <Box marginTop='25px' padding={'50px'} >
+          <Center fontSize='2xl' marginBottom={'3rem'} color={'white'}>
+            <h1>Login to your account</h1>
+          </Center>
+          <Label id='username' type='text' label='Enter your username'/>
+          <Label id='password' type='password' label='Enter your password'/>
+          <LoginButton />
+        </Box>
+      </Box>
+    </ChakraProvider>
   );
 }
 
