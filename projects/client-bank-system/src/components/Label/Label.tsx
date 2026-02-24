@@ -4,11 +4,11 @@ import { LabelProps } from "../../utils/utils";
 
 export const Label = (props: LabelProps) => {
     return (
-        <Box color={'white'}>
+        <Box>
             <Center flexDirection={'column'} marginBottom={'2rem'} color={'white'} >
                 <Input id={props.id} type={props.type} placeholder={props.label} 
                 w='80%' 
-                color='white' 
+                color='#0F172A' 
                 border='1px solid #000000' 
                 borderRadius='25px' 
                 padding='0.5rem'></Input>

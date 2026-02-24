@@ -1,6 +1,6 @@
 import { Box, ChakraProvider, defaultSystem } from '@chakra-ui/react';
 import { Header } from '../../components/Header/Header';
-import { Card } from '../../components/Card/Card';
+import { LoginCard } from '../../components/Card/LoginCard';
 import { Footer } from '../../components/Footer/Footer';
 
 
@@ -8,9 +8,9 @@ import { Footer } from '../../components/Footer/Footer';
 function Login() {
   return (
     <ChakraProvider value={defaultSystem}>
-      <Box bg='#1a66ff' minHeight='100vh'>
+      <Box bg='#0F172A' minHeight='100vh'>
         <Header />
-        <Card />
+        <LoginCard />
         <Footer />
       </Box>
     </ChakraProvider>

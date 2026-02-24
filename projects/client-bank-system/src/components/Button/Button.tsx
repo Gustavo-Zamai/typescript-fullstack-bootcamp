@@ -2,18 +2,21 @@ import { Button,
         Box, 
         Center } 
     from "@chakra-ui/react";
+import { login } from "../../services/login/login";
+import { ButtonProps } from "../../utils/utils";
 
-export const LoginButton = () => {
+export const LoginButton = (props: ButtonProps) => {
     return (
         <Box>
-            <Center h='100px' w='100%' color='blue' fontSize='2xl' marginTop={'2rem'}>
-                <Button bg='#f2f2f2' 
-                color='#1a66ff' 
+            <Center h='100px' w='100%' color='blue' fontSize='2xl' marginTop='1rem'>
+                <Button
+                bg='#3B82F6' 
+                color='#FFFFFF' 
                 w='40%' 
                 borderRadius='25px'
-                border='#000000' 
-                _hover={{bg: '#ffffff', color: '#0044cc', shadow: 'md' , border:'#000000'}}
-                >Login</Button>
+                _hover={{bg: '#1D4ED8', color: '#FFFFFF', shadow: 'md'}}
+                onClick={login}
+                >{props.text}</Button>
             </Center>
         </Box>
     );

@@ -2,27 +2,26 @@ import { Box, Center, Link } from '@chakra-ui/react';
 import { Label } from '../Label/Label';
 import { LoginButton } from '../Button/Button';
 
-export const Card = () => {
+export const SignupCard = () => {
     return (
         <Center>
         <Box padding='3rem' 
             marginTop='2rem' 
             border='1px solid black' 
             borderRadius='10px' 
-            bg='#ffffff'
-            alignItems='center' 
-            justifyContent='center'
+            bg='#FFFFFF'
             width='75%'
             shadow='lg'
             >
-            <Center fontSize='2xl' marginBottom='3rem' color='#1a66ff'>
-                <h1>Login to your account</h1>
+            <Center fontSize='2xl' marginBottom='2rem' color='#0F172A'>
+                <h1>Signup an account</h1>
             </Center>
-            <Label id='username' type='text' label='Enter your username' />
+            <Label id='email' type='email' label='Enter your email' /> 
             <Label id='password' type='password' label='Enter your password' />
-            <LoginButton />
+            <Label id='confirmPassword' type='password' label='Confirm your password' />
+            <LoginButton text='Signup'/>
             <Link href='#' 
-                color='#1a66ff' 
+                color='#0F172A' 
                 marginTop='1rem' 
                 display='block' 
                 textAlign='center' 

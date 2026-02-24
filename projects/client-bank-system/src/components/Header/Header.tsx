@@ -6,7 +6,7 @@ import { Box,
 export const Header = () => {
     return (
         <Box>
-            <Center bg='#1a66ff' 
+            <Center bg='#0F172A' 
             h='100px' 
             w='100%' 
             color='white' 

@@ -4,4 +4,12 @@ interface LabelProps {
     label: string
 }
 
-export type { LabelProps };
+interface ButtonProps {
+    text: string
+}
+
+interface LinkProps {
+    text: string
+}
+
+export type { LabelProps, ButtonProps, LinkProps };
