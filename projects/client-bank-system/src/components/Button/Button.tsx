@@ -15,7 +15,7 @@ export const LoginButton = (props: ButtonProps) => {
                 w='40%' 
                 borderRadius='25px'
                 _hover={{bg: '#1D4ED8', color: '#FFFFFF', shadow: 'md'}}
-                onClick={login}
+                onClick={props.event}
                 >{props.text}</Button>
             </Center>
         </Box>

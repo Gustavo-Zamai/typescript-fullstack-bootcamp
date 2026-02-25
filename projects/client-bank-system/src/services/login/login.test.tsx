@@ -7,8 +7,8 @@ jest.mock("./login", () => ({
 }));
 describe("login", () => {
   it("Send a message", () => {
-    login();
-    expect(mockAlert).toHaveBeenCalledWith('Welcome to the login service!');
+    login("test@example.com", "password123");
+    expect(mockAlert).toHaveBeenCalledWith('Welcome to the login service, test@example.com, your password is password123');
   })
 });
 
