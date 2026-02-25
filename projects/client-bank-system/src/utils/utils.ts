@@ -10,6 +10,7 @@ interface ButtonProps {
 
 interface LinkProps {
     text: string
+    href: string
 }
 
 export type { LabelProps, ButtonProps, LinkProps };

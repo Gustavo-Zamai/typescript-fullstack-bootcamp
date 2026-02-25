@@ -1,6 +1,7 @@
-import { Box, Center, Link } from '@chakra-ui/react';
+import { Box, Center } from '@chakra-ui/react';
 import { Label } from '../Label/Label';
 import { LoginButton } from '../Button/Button';
+import { LinkComponent } from '../Link/Link';
 
 
 export const LoginCard = () => {
@@ -20,13 +21,7 @@ export const LoginCard = () => {
             <Label id='email' type='email' label='Enter your email' /> 
             <Label id='password' type='password' label='Enter your password' />
             <LoginButton text='Login'/>
-            <Link href='#' 
-                color='#0F172A' 
-                marginTop='1rem' 
-                display='block' 
-                textAlign='center' 
-                fontSize='sm'
-            >Don't have an account? Signup Here</Link>
+            <LinkComponent href='/signup' text="Don't have an account? Signup Here" />
         </Box>
         </Center>
     );
