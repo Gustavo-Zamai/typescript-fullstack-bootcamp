@@ -16,4 +16,10 @@ interface LinkProps {
     href: string
 }
 
-export type { InputProps, ButtonProps, LinkProps };
+interface HeaderProps {
+  showMenu?: boolean; // Prop para decidir se mostra o menu ou não
+  menuContent?: React.ReactNode; // Slot para o conteúdo do menu
+}
+
+
+export type { InputProps, ButtonProps, LinkProps, HeaderProps };

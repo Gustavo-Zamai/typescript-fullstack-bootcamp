@@ -1,4 +1,4 @@
-import { Footer } from "../Footer/Footer";
+/*import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 
 export const Layout = ({ children }: any) => {
@@ -6,6 +6,22 @@ export const Layout = ({ children }: any) => {
         <>
             <Header />
             {children}
+            <Footer />
+        </>
+    )
+};*/
+
+import { Box } from "@chakra-ui/react";
+import { Footer } from "../Footer/Footer";
+import { Header } from "../Header/Header";
+
+export const Layout = ({ children, showMenu }: any) => {
+    return (
+        <>
+            <Header showMenu={showMenu} />
+            <Box as="main" p="4">
+                {children}
+            </Box>
             <Footer />
         </>
     )

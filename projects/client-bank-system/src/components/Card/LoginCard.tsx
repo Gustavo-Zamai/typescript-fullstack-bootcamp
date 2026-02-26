@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Box, Center } from '@chakra-ui/react';
-import { Label } from '../Label/Label';
+import { InputCard } from '../Input/Input';
 import { LoginButton } from '../Button/Button';
 import { LinkComponent } from '../Link/Link';
 import { login } from '../../services/login/login';
@@ -25,8 +25,8 @@ export const LoginCard = () => {
             <Center fontSize='2xl' marginBottom='3rem' color='#0F172A'>
                 <h1>Login to your account</h1>
             </Center>
-            <Label id='email' type='email' label='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)}  /> 
-            <Label id='password' type='password' label='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <InputCard id='email' type='email' label='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)}  /> 
+            <InputCard id='password' type='password' label='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
             <LoginButton text='Login' event={() => { login(email, password); console.log(email, password); }}/>
             <LinkComponent href='/signup' text="Don't have an account? Signup Here" />
         </Box>

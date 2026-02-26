@@ -2,7 +2,7 @@ import { Box, Center, Input } from "@chakra-ui/react";
 import { InputProps } from "../../utils/utils";
 
 
-export const Label = (props: InputProps) => {
+export const InputCard = (props: InputProps) => {
     return (
         <Box>
             <Center flexDirection={'column'} marginBottom={'2rem'} color={'white'} >

@@ -10,7 +10,7 @@ export const Footer = () => {
         fontFamily='Arial sans-serif' 
         position='fixed' bottom={0} left={0} 
         display='flex' alignItems='center' justifyContent='center'>
-            &copy; 2024 Banking System. All rights reserved.
+            &copy; 2026 Banking System. All rights reserved.
         </Box>
     )
 }
